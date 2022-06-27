@@ -1,0 +1,31 @@
+{
+    "scopeName": "source.bf",
+    "name": "bf",
+    "comment": "Syntax highlighting support for BrainFuck.",
+    "fileTypes": [
+        "bf",
+        "b"
+    ],
+    "patterns": [
+        {
+            "match": "\\[|\\]",
+            "name": "keyword.control.bf"
+        },
+        {
+            "match": "<|>",
+            "name": "storage.type.bf"
+        },
+        {
+            "match": "\\+|-",
+            "name": "keyword.operator.arithmetic.bf"
+        },
+        {
+            "match": "\\.|,",
+            "name": "entity.name.function.io.bf"
+        },
+        {
+            "match": "[^+<>\\-\\[\\].,]+",
+            "name": "comment.bf"
+        }
+    ]
+}

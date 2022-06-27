@@ -1,0 +1,63 @@
+{
+  	"name": "brainparse",
+	"displayName": "BrainParse",
+	"description": "Brainfuck parser",
+	"version": "0.0.1",
+	"publisher": "nnavnita",
+	"license": "MIT",
+	"readme": "README.md",
+	"author": {
+		"name": "Navnita",
+		"url": "https://navnita.com"
+	},
+	"homepage": "https://github.com/nnavnita/brainparse#readme",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/nnavnita/brainparse"
+    },
+	"bugs": {
+        "url": "https://github.com/nnavnita/brainparse/issues"
+    },
+	"galleryBanner": {
+        "color": "#242424",
+        "theme": "dark"
+    },
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"brainfuck",
+		"bf",
+		"vscode",
+		"language",
+		"programming",
+		"highlight",
+		"syntax",
+		"parse",
+		"compile"
+	],
+	"engines": {
+		"vscode": "^1.68.0"
+	},
+	"contributes": {
+		"languages": [{
+			"id": "bf",
+			"aliases": [
+				"BrainFuck",
+				"brainfuck",
+				"brainf",
+				"brainfck"
+			],
+			"extensions": [
+				".b",
+				".bf"
+			],
+			"configuration": "./syntax/language-configuration.json"
+		}],
+		"grammars": [{
+			"language": "bf",
+			"scopeName": "source.bf",
+			"path": "./syntax/bf.tmLanguage.json"
+		}]
+	}
+}
